@@ -1,0 +1,17 @@
+.list-group{
+	max-width: 400px !important;
+
+}
+a{
+	margin-top: 5px;
+}
+ a:hover {
+    background-color:#428bca !important;
+    color: #ffffff !important;
+}
+.ng-invalid.ng-dirty{
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty{
+	border-color: #78FA89;
+}

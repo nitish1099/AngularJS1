@@ -1,0 +1,29 @@
+<html ng-app="store">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<center>
+	<ul ng-controller="SimpleController as store" class="list-group " >
+		<li ng-repeat="product in store.products" class="list-group-item">
+
+		<img ng-src="{{product.image}}" width="200px" height="200px"/>
+		<product-panels>
+			 
+		</product-panels>
+		<h3><product-detail>
+		</product-detail></h3>
+		
+		<button class="btn btn-primary" ng-disabled="!product.canPurchase"> Add To Cart</button>
+		
+		</li>
+		</ul>
+		
+	</center>
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="product.js"></script>
+</body>
+</html>
